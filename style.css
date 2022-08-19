@@ -1,0 +1,225 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior:smooth ;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+/*Navbar: Logo and image */
+#logo{
+    margin: 6px px;
+}
+#logo img{
+    height: 89px;
+    margin: 1px 3px;
+}
+
+/* Navbar: List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: rgb(46, 42, 42);
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 416px;
+}
+#home::before{
+    content: "";
+    background: url('img2.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+#home h2{
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#home p{
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:bold;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 34px;
+    text-align: center;
+    align-items: center;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: -12px 8px;
+    margin-bottom: 20px;
+    border-radius: 23px;
+    background-color: #f0eaea;
+    box-shadow: 5px;
+}
+.services h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.9rem;
+}
+
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Clients-services */
+#client-section{
+    height: 300px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(196 188 188);
+    height: 38%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+.client-item{
+    padding: 40px;
+
+}
+
+/* Contact section */
+#contacts{
+    position: relative;
+}
+#contacts::before{
+    content: "";
+    position: absolute;
+    background: url('contact bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#contact-box{
+    display: flex;
+    padding-bottom: 34px ;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+.h-secondary1{
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+    border: 2px solid rgb(105, 99, 99);
+    padding: 2px 20px;
+    margin: 17px;
+    background-color: rgb(39, 37, 37);
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.center{
+    text-align: center;
+}
+
+
